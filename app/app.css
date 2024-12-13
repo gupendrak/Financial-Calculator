@@ -1,0 +1,63 @@
+.page {
+  background-color: #f4f4f4;
+}
+
+.action-bar {
+  background-color: #6200ee;
+  color: white;
+}
+
+.main-container {
+  padding: 20;
+  background-color: #ffffff;
+  border-radius: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* corrected shadow syntax */
+}
+
+.title {
+  font-size: 24;
+  color: #6200ee;
+  font-weight: bold;
+  margin-bottom: 20;
+  text-align: center;
+}
+
+.input {
+  margin: 10;
+  font-size: 16;
+  padding: 8;
+}
+
+.btn-primary {
+  background-color: #6200ee;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: auto; /* Width based on text length */
+  height: auto; /* Height based on content */
+  min-width: 150px; /* Minimum width to ensure button is clickable and not too small */
+  font-size: 16px; /* Font size adjusted for readability */
+  align-self: center; /* Ensure the button is centered */
+  text-align: center; /* Center text in the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-primary:active {
+  background-color: #5e00cc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:focus {
+  outline: none;
+  border: 2px solid #fff;
+}
+
+.output {
+  font-size: 20;
+  color: #6200ee;
+  font-weight: bold;
+  margin-top: 10;
+  text-align: center;
+}

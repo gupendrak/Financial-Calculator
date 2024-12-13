@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Financial Calculator" class="action-bar" />
+
+  <GridLayout class="main-container">
+    <StackLayout class="input-container">
+      <Label class="title" text="Inflation Calculator" />
+
+      <!-- Bind TextField inputs to the corresponding ViewModel properties -->
+      <TextField class="input"
+                 hint="Current Value in INR"
+                 text="{{ currentValue }}"
+                 keyboardType="number"
+                  />
+      
+      <TextField class="input"
+                 hint="Inflation Rate (%)"
+                 text="{{ inflationRate }}"
+                 keyboardType="number"
+                  />
+      
+      <TextField class="input"
+                 hint="Future Year"
+                 text="{{ futureYear }}"
+                 keyboardType="number" />
+
+      <Button text="Calculate Now" tap="onCalculate" class="btn-primary" />
+
+      <Label text="{{ calculatedValue }}" class="result-label" />
+    </StackLayout>
+  </GridLayout>
+</Page>
